@@ -48,7 +48,7 @@
 */
 int revers_polish_notation(lexeme_t *lexemes, int lexeme_count,
                            lexeme_t *polish) {
-  lexeme_t buff[BUFF_SIZE] = {0};
+  lexeme_t buff[BUFF_SIZE];
   int buff_count = 0;
   int polish_count = 0;
 

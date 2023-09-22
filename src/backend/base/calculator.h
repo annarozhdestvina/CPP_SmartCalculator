@@ -51,11 +51,13 @@ typedef struct {
   int position;
 } result_t;
 
-typedef struct {
+struct lexeme_t{
   int token;
   int priority;
   long double number;
-} lexeme_t;
+
+  lexeme_t () : token{0}, priority{0}, number{0.0l} {}
+};
 
 int validate_input(const char *input_str, lexeme_t *lexemes, result_t *result);
 
