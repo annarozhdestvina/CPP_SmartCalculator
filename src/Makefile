@@ -74,6 +74,8 @@ clean: uninstall
 	@$(RM) $(PATH_DOCS)latex.aux
 	@$(RM) $(PATH_DOCS)latex.dvi
 	@$(RM) $(PATH_DOCS)latex.log
+	rm -rf build/
+	rm -rf CMakeFiles/
 
 fclean: clean
 	@$(MAKE) -C $(PATH_BACKEND) fclean
